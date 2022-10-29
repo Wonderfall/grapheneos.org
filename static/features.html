@@ -329,7 +329,9 @@
                                     out for other uses and gets partially or fully overwritten by
                                     new data.</li>
                                     <li>Kernel stack allocations are zeroed to make most
-                                    uninitialized data usage vulnerabilities harmless.</li>
+                                    uninitialized data usage vulnerabilities harmless. While this
+                                    feature is already enabled by default for GKI kernels (Pixel 6
+                                    and later), it is also enabled for non-GKI kernels.</li>
                                     <li>Assorted attack surface reduction through disabling
                                     features or setting up infrastructure to dynamically
                                     enable/disable them only as needed (perf, ptrace).</li>
